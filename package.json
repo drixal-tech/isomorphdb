@@ -1,0 +1,65 @@
+{
+  "name": "@drixal/isomorphdb",
+  "version": "0.1.0",
+  "description": "Zero-trust synthetic database generation for Postgres. Locally generated, no data egress.",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "isomorphdb": "./dist/cli/index.js",
+    "isomorphdb-mcp": "./dist/mcp/index.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "COMMERCIAL_LICENSE.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli/index.ts",
+    "test": "jest --coverage",
+    "lint": "eslint 'src/**/*.ts'",
+    "prepublishOnly": "npm run lint && npm run build && npm test"
+  },
+  "keywords": [
+    "synthetic-data",
+    "postgres",
+    "supabase",
+    "testing",
+    "privacy",
+    "developer-tools",
+    "zero-trust",
+    "mcp",
+    "ai-agents"
+  ],
+  "author": "Dhananjay",
+  "license": "AGPL-3.0-or-later",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@types/inquirer": "^8.2.12",
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "commander": "^12.0.0",
+    "inquirer": "^8.2.7",
+    "node-sql-parser": "^5.4.0",
+    "ora": "^5.4.1",
+    "pg": "^8.11.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.11.0",
+    "@types/uuid": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.4.0"
+  }
+}
