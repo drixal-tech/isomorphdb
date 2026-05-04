@@ -37,7 +37,7 @@ IsomorphDB fixes this. It reads **only metadata** from your database (table stru
 ### Globally via npm
 
 ```bash
-npm install -g isomorphdb
+npm install -g @drixal/isomorphdb
 ```
 
 ### Usage as an MCP Server
@@ -75,13 +75,13 @@ postgres://isomorphdb_reader:your_secure_password@localhost:5432/isomorphdb_morp
 #### Claude Code
 To add IsomorphDB to Claude Code:
 ```bash
-claude mcp add isomorphdb-mcp -- npx isomorphdb-mcp
+claude mcp add isomorphdb-mcp -- npx -y @drixal/isomorphdb isomorphdb-mcp
 ```
 
 #### Cursor
 1. Open Cursor Settings → Features → MCP.
 2. Click **+ Add new MCP server**.
-3. Set the name to `IsomorphDB` and the command to `npx isomorphdb-mcp`.
+3. Set the name to `IsomorphDB` and the command to `npx -y @drixal/isomorphdb isomorphdb-mcp`.
 4. Click Save.
 
 ---
