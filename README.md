@@ -1,6 +1,6 @@
 # IsomorphDB
 
-[![npm version](https://img.shields.io/npm/v/isomorphdb.svg)](https://www.npmjs.com/package/isomorphdb)
+[![npm version](https://img.shields.io/npm/v/@drixal/isomorphdb.svg)](https://www.npmjs.com/package/isomorphdb)
 [![License: AGPL 3.0](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](https://opensource.org/licenses/AGPL-3.0)
 [![CI](https://github.com/dhananjay/isomorphdb/actions/workflows/ci.yml/badge.svg)](https://github.com/dhananjay/isomorphdb/actions/workflows/ci.yml)
 
